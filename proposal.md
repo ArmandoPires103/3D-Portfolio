@@ -1,43 +1,47 @@
 ## Phase 1: Planning and Design (Tuesday)
-Define project scope and requirements.
-Develop wireframes and design mockups.
+1.Define project scope and requirements.
+2.Develop wireframes and design mockups.
 
 ## Phase 2: Development and Api usuage (Wedensday and Thursday)
-Integrate data aggregation and API systems.
-Find the right one that goes with my idea.
-Develop my html and js.
+1.Integrate data aggregation and API systems.
+2.Find the right one that goes with my idea.
+3.Develop my html and js.
 
 ## Phase 3: Testing and Quality Assurance (Friday)
-Conduct extensive testing for functionality, performance, and security.
-Address and resolve any identified issues.
+1.Conduct extensive testing for functionality, performance, and security.
+2.Address and resolve any identified issues.
 
 
 # User Stories 
 
-## Sports Enthusiast,
+## As a Sports Enthusiast,
 
-I want to easily navigate through the website to find information on my favorite sports, teams, and players.
-So that I can quickly access the latest scores, upcoming events, and relevant statistics without any hassle.
+- User can easily navigate through the website to find information on my favorite sports, teams, and players.
 
-## Fantasy Sports Player,
+- User can quickly access the latest scores, upcoming events, and relevant statistics without any hassle.
 
-I want to receive real-time updates on player performance, injuries, and other crucial data. 
+## As a Fantasy Sports Player,
 
-So that I can make informed decisions while managing my fantasy sports team and stay competitive in my league.
+- User can receive real-time updates on player performance, injuries, and other crucial data. 
 
-## Data Analyst,
+- User can make informed decisions while managing my fantasy sports team and stay competitive in my league.
 
-I want access to historical data and advanced analytics tools to perform in-depth analysis on player and team statistics.
-So that I can derive meaningful insights, trends, and patterns to inform my research and contribute to the sports analytics community.
+## As a Data Analyst,
 
-## Social Media Influencer,
+- User can access historical data and advanced analytics tools to perform in-depth analysis on player and team statistics.
 
-I want seamless integration with social media platforms to share my thoughts, analysis, and favorite sports moments.
-So that I can engage with my audience and build a community around sports discussions and insights.
+- User can derive meaningful insights, trends, and patterns to inform my research and contribute to the sports analytics community.
+
+## As a Social Media Influencer,
+
+- User can integration with social media platforms to share my thoughts, analysis, and favorite sports moments.
+
+- User can engage with my audience and build a community around sports discussions and insights.
 
 ## Casual Fan,
 
-I want personalized recommendations based on my favorite sports and teams.
-So that I can discover new and exciting matches, players, or events that align with my interests, enhancing my overall sports-watching experience.
+- User can personalize recommendations based on their favorite sports and teams.
+
+- User can discover new and exciting matches, players, or events that align with my interests, enhancing my overall sports-watching experience.
 
 The api I will use is https://app.balldontlie.io/

@@ -1,15 +1,15 @@
 ## Phase 1: Planning and Design (Tuesday)
-1.Define project scope and requirements.
-2.Develop wireframes and design mockups.
+- Define project scope and requirements.
+- Develop wireframes and design mockups.
 
 ## Phase 2: Development and Api usuage (Wedensday and Thursday)
-1.Integrate data aggregation and API systems.
-2.Find the right one that goes with my idea.
-3.Develop my html and js.
+- Integrate data aggregation and API systems.
+- Find the right one that goes with my idea.
+- Develop my html and js.
 
 ## Phase 3: Testing and Quality Assurance (Friday)
-1.Conduct extensive testing for functionality, performance, and security.
-2.Address and resolve any identified issues.
+- Conduct extensive testing for functionality, performance, and security.
+- Address and resolve any identified issues.
 
 
 # User Stories 

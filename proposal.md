@@ -38,7 +38,7 @@
 
 - User can engage with my audience and build a community around sports discussions and insights.
 
-## Casual Fan,
+## As a Casual Fan,
 
 - User can personalize recommendations based on their favorite sports and teams.
 

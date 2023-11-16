@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars Scroller</title>
-    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fontmeme.com/fonts/star-jedi-font/" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Star Jedi', sans-serif;
+            background: url('./images/photo-1586136194012-35ceaddbd773.avif') no-repeat center/cover;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+    </style>
+    <title>Star Wars Hub</title>
 </head>
-<body>
-    <section class="intro">
-        A long time ago, in a galaxy far,<br> far away....
-    </section>
-    <section class="logo">
-      
+<body class="container">
+    <header class="text-center pt-5">
+        <a href="https://swapi.dev/">
+            <!-- Your header content -->
+        </a>
+    </header>
+<!-- Buttons For Selection-->
+  <div id="buttons" class="text-center nb-5">
+    <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
+        <label class="btn btn-lg btn-outline-light">
+            <input type="radio" name="options" id="films" autocomplete="off">Films
+        </label>
+        <label class="btn btn-lg btn-outline-light">
+            <input type="radio" name="options" id="people" autocomplete="off">People
+        </label>
+        <label class="btn btn-lg btn-outline-light">
+            <input type="radio" name="options" id="vehicles" autocomplete="off">Vehicles
+        </label>
+    </div>
+  </div>
+  <!--End-->
+  
+    

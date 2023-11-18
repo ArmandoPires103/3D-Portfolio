@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Star Jedi', sans-serif;
-            background: url('../images/photo-1586136194012-35ceaddbd773.avif') no-repeat center/cover;
+            background: url('../images/photo-1618336753974-aae8e04506aa.avif') no-repeat center/cover;
             height: 50vh;
             background-attachment: fixed;
         }
@@ -39,6 +39,17 @@
   <div id="results" class="card-colums"></div>
   <!--End-->
 
+
+  <!-- Your existing HTML form -->
+<form id="myForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <button type="submit">Submit</button>
+</form>
+
+<!-- Error message element -->
+<p id="errorMessage" style="color: red;"></p>
+
   <script 
   src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
@@ -50,5 +61,6 @@
   crossorigin="anonymous">
   </script>
   <script src="./main.js"></script>
+
 
 

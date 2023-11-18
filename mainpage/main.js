@@ -51,13 +51,36 @@ function displayResults(data, value) {
                     <div class="card-content">
                         <span style="text-decoration: underline;">Capacity</span>: ${item.cargo_capacity}<br>
                         <span style="text-decoration: underline;">Model</span>: ${item.model}<br>
-                        <span style="text-decoration: underline;">Vehicle Class</span>: ${item.vechicle_class}<br>
+                        <span style="text-decoration: underline;">Vehicle Class</span>: ${item.vehicle_class}<br> <!-- Fix the typo here -->
                     </div>
                 </div>`;
         });
     }
+    
     results.innerHTML = output;
 }
 document.querySelector("#buttons").addEventListener("click", e => {
     asyncFetch(e.target.textContent.trim().toLowerCase());
+});
+
+const form = document.getElementById('myForm');
+const errorMessageElement = document.getElementById('errorMessage');
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const usernameInput = document.getElementById('username');
+    const usernameValue = usernameInput.value.trim();
+
+    // Check if the username is empty
+    if (!usernameValue) {
+        errorMessageElement.textContent = 'Please enter a username.';
+    } else {
+        // Clear the error message if there are no issues
+        errorMessageElement.textContent = '';
+
+        // Perform your API request or other actions here
+        // For demonstration purposes, we'll log a success message
+        console.log('Form submitted successfully!');
+    }
 });

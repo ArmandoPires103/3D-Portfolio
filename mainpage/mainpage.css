@@ -36,3 +36,12 @@
 	color: white;
 	font-size: 1.3rem;
 }
+button {
+    /* Your existing styles */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+button:hover {
+    background-color: #000; /* Change background color on hover */
+    color: #ffe81f; /* Change text color on hover */
+}

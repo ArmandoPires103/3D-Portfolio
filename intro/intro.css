@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
+/* BODY */
 body {
-	margin: 0;
-	background-color: #000;
-	overflow: hidden !important;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden !important;
 }
 
 body::after {
@@ -21,13 +21,14 @@ body::after {
 	);
 	z-index: 1;
 }
+/* BODY END */
 
 .stars {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	background-color: #fff;
-	z-index: 2;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: #fff;
+    z-index: 2;
 }
 
 .intro {
@@ -68,13 +69,40 @@ body::after {
 	z-index: 2;
 	width: 100%;
 	opacity: 0;
-	animation: logo 10s ease-out 9s;
+	animation: logo 6s ease-out 7s;
 }
 
 .logo img {
 	width: inherit;
 }
+button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffe81f;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInButton 6s ease-out 6s forwards;
+}
 
+button:hover {
+    background-color: #000;
+    color: #ffe81f;
+}
+
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @keyframes logo {
 	0% {
 		opacity: 1;
@@ -143,14 +171,4 @@ p {
 #subtitle {
 	text-transform: uppercase;
 	font-size: 3.5rem;
-}
-
-button {
-    /* Your existing styles */
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
-}
-
-button:hover {
-    background-color: #000; /* Change background color on hover */
-    color: #ffe81f; /* Change text color on hover */
 }

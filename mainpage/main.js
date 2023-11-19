@@ -66,21 +66,32 @@ document.querySelector("#buttons").addEventListener("click", e => {
 const form = document.getElementById('myForm');
 const errorMessageElement = document.getElementById('errorMessage');
 
-form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent default form submission
 
-    const usernameInput = document.getElementById('username');
-    const usernameValue = usernameInput.value.trim();
 
-    // Check if the username is empty
-    if (!usernameValue) {
-        errorMessageElement.textContent = 'Please enter a username.';
+
+const searchButton = document.getElementById('searchButton');
+const searchInput = document.getElementById('searchInput');
+
+searchButton.addEventListener('click', () => {
+    const searchTerm = searchInput.value.trim();
+    if (searchTerm !== '') {
+        // Make an API request with the search term
+        fetchDataFromAPI(searchTerm);
     } else {
-        // Clear the error message if there are no issues
-        errorMessageElement.textContent = '';
-
-        // Perform your API request or other actions here
-        // For demonstration purposes, we'll log a success message
-        console.log('Form submitted successfully!');
+        // Handle empty search term
+        alert('Please enter a search term');
     }
 });
+
+async function fetchDataFromAPI(searchTerm) {
+    try {
+        const res = await fetch(`https://swapi.dev/api/people/?search=${searchTerm}`);
+        if (!res.ok) {
+            throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        const data = await res.json();
+        displayResults(data, 'people');
+    } catch (error) {
+        console.error('Error fetching data:', error.message);
+    }
+}

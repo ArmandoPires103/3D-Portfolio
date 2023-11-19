@@ -87,7 +87,7 @@ button {
     border: none;
     cursor: pointer;
     opacity: 0;
-    animation: fadeInButton 6s ease-out 6s forwards;
+    animation: fadeInButton 3s ease-out 6s forwards;
 }
 
 button:hover {

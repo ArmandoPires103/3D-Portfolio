@@ -39,7 +39,7 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: rgb(53, 20, 220);
+	color: rgb(5, 1, 20);
 }
 
 .cta {
@@ -47,7 +47,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid rgb(47, 20, 220);
+	border: 2px solid rgb(2, 0, 10);
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -57,7 +57,7 @@ p {
 }
 .cta:hover {
 	color: white;
-	background-color: rgb(47, 20, 220);
+	background-color: rgb(2, 1, 14);
 }
 .brand h1 {
 	font-size: 3rem;
@@ -65,7 +65,7 @@ p {
 	color: white;
 }
 .brand h1 span {
-	color: rgb(43, 20, 220);
+	color: rgb(1, 0, 6);
 }
 
 /* Header section */
@@ -137,7 +137,7 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: rgb(40, 20, 220);
+	color: rgb(1, 0, 11);
 }
 #header .hamburger {
 	height: 60px;
@@ -245,7 +245,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: rgb(40, 20, 220);
+	background-color: rgb(1, 0, 9);
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -439,7 +439,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid rgb(50, 20, 220);
+	border: 7px solid rgb(1, 0, 6);
 	z-index: -1;
 }
 /* End About Section */
@@ -557,7 +557,7 @@ p {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: rgb(80, 20, 220);
+		color: rgb(2, 0, 8);
 		font-weight: 500;
 	}
 }
@@ -621,7 +621,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid rgb(23, 20, 220);
+		border: 10px solid rgb(0, 0, 10);
 	}
 	#about .col-right {
 		text-align: left;

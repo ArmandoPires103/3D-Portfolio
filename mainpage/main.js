@@ -91,6 +91,7 @@ async function fetchDataFromAPI(searchTerm) {
         }
         const data = await res.json();
         displayResults(data, 'people');
+        
     } catch (error) {
         console.error('Error fetching data:', error.message);
     }

@@ -30,7 +30,7 @@ async function asyncFetch(value) {
 
 function displayResults(data, value) {
     let output = "";
-    console.log(data);
+    //console.log(data);
     if (value === 'films') {
         data.results.forEach(item => {
             output += `
@@ -54,7 +54,7 @@ function displayResults(data, value) {
                     <div class="card-content">
                         <span style="text-decoration: underline;">Height</span>: ${item.height}<br>
                         <span style="text-decoration: underline;">Birth Year</span>: ${item.birth_year}<br>
-                        <span style="text-decoration: underline;">Skin Color</span>: ${item.skin_color}<br>
+                        <span style="text-decoration: underline;">Eye Color</span>: ${item.eye_color}<br>
                     </div>
                 </div>`;
         });

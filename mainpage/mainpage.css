@@ -1,193 +1,45 @@
 /* Body Styles */
-
 body {
-    /* Set the font family for the entire page */
     font-family: 'Star Jedi', sans-serif;
-
-    /* Set the background image, repeat it in the center, and cover the entire viewport */
     background: url('../images/baby\ yoda.jpeg') no-repeat center/cover;
-
-    /* Set the height of the body to 100% of the viewport height for better background visibility */
-    height: 100vh;
-
-    /* Fix the background while scrolling */
+    height: 50vh;
     background-attachment: fixed;
-
-    /* Set text color to white */
-    color: rgb(8, 0, 0);
+    color: rgb(8,0,0);
+}
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
 }
 
-/* Header Styles */
-header {
-    /* Set a semi-transparent background color with some padding */
-    background-color: rgba(31, 30, 30, 0.24);
-    padding: 20px;
-}
-
-/* Button Group Styles */
+/* Button Styles */
 .btn-group label.btn {
-    /* Set background, border, and text color for regular buttons */
-    background-color: #000;
+    background-color: black; 
     border-color: #060000;
-    color: #060000;
+    color: yellow; 
 }
 
 .btn-group label.btn.active {
-    /* Set background and text color for active buttons */
-    background-color: #ffe81f; /* Yellow color for active button */
-    color: #000;
+    background-color: #ffe81f; 
+    color: black; 
 }
 
-/* Results Container Styles */
-#results {
-    /* Set up a flex container with wrapping and space-around alignment */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-/* Card Styles within Results Container */
-#results .card {
-    /* Set background color, text color, and margin for each card */
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #ffe81f;
-    margin-bottom: 20px;
-}
-
-/* Card Header Styles */
-#results .card-header {
-    /* Set background color and text color for card headers */
-    background-color: #000;
-    color: #ffe81f;
-}
-
-/* Form Styles */
-#myForm {
-    /* Set background color, padding, margin, and border-radius for the form */
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-/* Error Message Styles */
-#errorMessage {
-    /* Set margin-top and font-weight for error messages */
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* Footer Styles */
-#footer {
-    /* Set background image with a gradient */
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: rgb(6, 0, 0); /* Set text color */
-    padding: 20px 0; /* Padding for the top and bottom */
-    text-align: center;
-}
-
-/* Social Icon Styles */
-.social-icon {
-    /* Center the social icons */
-    display: flex;
-    justify-content: center;
-}
-
-/* Social Item Styles */
-.social-item {
-    /* Set margin for social items */
-    margin: 0 10px;
-}
-
-/* Social Item Image Styles */
-.social-item img {
-    /* Set height, width, grayscale, and transition for social item images */
-    height: 50px;
-    width: 50px;
-    filter: grayscale(1);
-    transition: 0.3s ease filter;
-}
-
-/* Social Item Image Hover Styles */
-.social-item:hover img {
-    /* Remove grayscale on hover */
-    filter: grayscale(0);
-}
-
-#footer {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: rgb(6, 0, 0);
-    padding: 20px 0;
-    text-align: center;
-    
-    /* Add the following styles */
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Update the #footer .footer styles */
-#footer .footer {
-    min-height: 200px;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    
-    /* Add the following styles */
-    display: flex;
-    align-items: flex-end;
-    margin-top: auto; /* Push the content to the bottom */
-}
-
-/* Footer Heading Styles */
-#footer h2 {
-    /* Set color, font-weight, font-size, letter-spacing, and margin for footer headings */
-    color: white;
-    font-weight: 500;
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/* Social Icon Container Styles */
-#footer .social-icon {
-    /* Set display, margin for the social icon container */
-    display: flex;
-    margin-bottom: 30px;
-}
-
-/* Social Item Styles within Footer */
-#footer .social-item {
-    /* Set height, width, and margin for social items within the footer */
-    height: 50px;
-    width: 50px;
-    margin: 0 5px;
-}
-
-/* Social Item Image Styles within Footer */
-#footer .social-item img {
-    /* Set grayscale and transition for social item images within the footer */
-    filter: grayscale(1);
-    transition: 0.3s ease filter;
-}
-
-/* Social Item Image Hover Styles within Footer */
-#footer .social-item:hover img {
-    /* Remove grayscale on hover for social item images within the footer */
-    filter: grayscale(0);
-}
-
-/* Footer Paragraph Styles */
-#footer p {
-    /* Set color and font-size for paragraphs within the footer */
-    color: white;
-    font-size: 1.3rem;
+#searchButton {
+    background-color: black; 
+    color: yellow; 
+    border: 1px solid black;
 }
 
 
 
+
+
+
+
+
+ 
 
 
 

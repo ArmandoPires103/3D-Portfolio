@@ -1,17 +1,32 @@
+// FETCH //
+
+// Select the HTML element with the id "results" and store it in the variable "results"
 const results = document.querySelector("#results");
 
+// Define an asynchronous function named "asyncFetch" that takes a parameter called "value"
 async function asyncFetch(value) {
     try {
+        // Use the fetch function to make an asynchronous HTTP request to the Star Wars API
         const res = await fetch(`https://swapi.dev/api/${value}/`);
+
+        // Check if the HTTP response is successful (status code 200-299)
         if (!res.ok) {
+            // If not successful, throw an error with a message containing the HTTP status
             throw new Error(`HTTP error! Status: ${res.status}`);
         }
+
+        // If successful, parse the response body as JSON and store it in the variable "data"
         const data = await res.json();
+
+        // Call the "displayResults" function with the retrieved data and the provided value
         displayResults(data, value);
     } catch (error) {
+        // If an error occurs during the fetch or processing, log the error message to the console
         console.error('Error fetching data:', error.message);
     }
 }
+
+// DISPLAY FUNCTION //
 
 function displayResults(data, value) {
     let output = "";
@@ -28,6 +43,7 @@ function displayResults(data, value) {
                         <p class="text-center">${item.opening_crawl}</p>
                     </div>
                 </div>`;
+            
         });
     }
     if (value === 'people') {
@@ -56,43 +72,60 @@ function displayResults(data, value) {
                 </div>`;
         });
     }
-    
+    // Set the innerHTML of the element with the id "results" to the generated output
     results.innerHTML = output;
 }
+
+
+// Add an event listener to the element with the id "buttons"
 document.querySelector("#buttons").addEventListener("click", e => {
+    // Call the asyncFetch function with the lowercase text content of the clicked button
     asyncFetch(e.target.textContent.trim().toLowerCase());
 });
 
-const form = document.getElementById('myForm');
-const errorMessageElement = document.getElementById('errorMessage');
+// SEARCH FUNCTION //
 
+// Get references to the search button and search input elements using querySelector
+const searchButton = document.querySelector('#searchButton');
+const searchInput = document.querySelector('#searchInput');
 
-
-
-const searchButton = document.getElementById('searchButton');
-const searchInput = document.getElementById('searchInput');
-
+// Add an event listener to the search button
 searchButton.addEventListener('click', () => {
+    // When the button is clicked, execute this function
+
+    // Get the trimmed value from the search input
     const searchTerm = searchInput.value.trim();
+
+    // Check if the search term is not empty
     if (searchTerm !== '') {
-        // Make an API request with the search term
+        // If not empty, make an API request with the search term
         fetchDataFromAPI(searchTerm);
     } else {
-        // Handle empty search term
+        // If the search term is empty, show an alert message
         alert('Please enter a search term');
     }
 });
 
+// Define an asynchronous function named fetchDataFromAPI that takes a search term parameter
 async function fetchDataFromAPI(searchTerm) {
     try {
+        // Use the fetch function to make an asynchronous HTTP request to the Star Wars API
         const res = await fetch(`https://swapi.dev/api/people/?search=${searchTerm}`);
+
+        // Check if the HTTP response is successful (status code 200-299)
         if (!res.ok) {
+            // If not successful, throw an error with a message containing the HTTP status
             throw new Error(`HTTP error! Status: ${res.status}`);
         }
+
+        // If successful, parse the response body as JSON and store it in the variable "data"
         const data = await res.json();
+
+        // Call the "displayResults" function with the retrieved data and a specific value ('people')
         displayResults(data, 'people');
-        
+
     } catch (error) {
+        // If an error occurs during the fetch or processing, log the error message to the console
         console.error('Error fetching data:', error.message);
     }
 }

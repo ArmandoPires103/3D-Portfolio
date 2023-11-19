@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- External font and Bootstrap CSS -->
     <link href="https://fontmeme.com/fonts/star-jedi-font/" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom styles for the body -->
     <style>
         body {
             font-family: 'Star Jedi', sans-serif;
             background: url('../images/baby\ yoda.jpeg') no-repeat center/cover;
             height: 50vh;
             background-attachment: fixed;
+            color: rgb(8,0,0);
         }
     </style>
+
+    <!-- Title for the web page -->
     <title>Star Wars Hub</title>
 </head>
 <body class="container">
+    <!-- Header section with a link -->
     <header class="text-center pt-5">
+        <h1>Star Wars Hub</h1>
         <a href="https://swapi.dev/">
-            <!-- Your header content -->
+            <!-- Your header content (possibly an image or text) -->
         </a>
     </header>
+
+    <!-- Search bar section -->
     <div class="d-flex justify-content-center mt-3">
         <input type="text" id="searchInput" class="form-control" placeholder="Enter your search">
         <button id="searchButton" class="btn btn-primary ml-2">Search</button>
     </div>
-    
-    
-<!-- Buttons For Selection-->
-  <div id="buttons" class="text-center mb-5">
-    <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
-        <label class="btn btn-lg btn-outline-light">
-            <input type="radio" name="options" id="films" autocomplete="off">Films
-        </label>
-        <label class="btn btn-lg btn-outline-light">
-            <input type="radio" name="options" id="people" autocomplete="off">People
-        </label>
-        <label class="btn btn-lg btn-outline-light">
-            <input type="radio" name="options" id="vehicles" autocomplete="off">Vehicles
-        </label>
+
+    <!-- Buttons for selection (Films, People, Vehicles) -->
+    <div id="buttons" class="text-center mb-5">
+        <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
+            <label class="btn btn-lg btn-outline-light">
+                <input type="radio" name="options" id="films" autocomplete="off">Films
+            </label>
+            <label class="btn btn-lg btn-outline-light">
+                <input type="radio" name="options" id="people" autocomplete="off">People
+            </label>
+            <label class="btn btn-lg btn-outline-light">
+                <input type="radio" name="options" id="vehicles" autocomplete="off">Vehicles
+            </label>
+        </div>
     </div>
-  </div>
 
-  <div id="results" class="card-colums"></div>
-<!--End-->
-<footer class="text-center py-3 mt-5" style="background-color: black; color: white;">
-    <p>May the Force be with you!</p>
-    <a href="../portfolio/portfolio.html" target="_blank" style="color: yellow;">Visit my Portfolio</a>
-</footer>
+    <!-- Container for displaying results dynamically -->
+    <div id="results" class="card-colums"></div>
 
+    <!-- Footer section with a message and a link to a portfolio -->
+    <footer class="text-center py-3 mt-5" style="background-color: black; color: white;">
+        <p>May the Force be with you!</p>
+        <a href="../portfolio/portfolio.html" target="_blank" style="color: yellow;">Visit my Portfolio</a>
+    </footer>
 
-<!-- Error message element -->
-<p id="errorMessage" style="color: red;"></p>
-
-  <script 
-  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
-  crossorigin="anonymous">
-  </script>
-  <script 
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
-  crossorigin="anonymous">
-  </script>
-  <script src="./main.js"></script>
+    <!-- Script tags for Bootstrap JavaScript dependencies and your custom JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
-  
+
 
 
 

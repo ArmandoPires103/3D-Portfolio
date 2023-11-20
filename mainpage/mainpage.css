@@ -32,7 +32,29 @@ footer {
     border: 1px solid black;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 
+    /* Additional styles for smaller screens if needed */
+    #buttons {
+        flex-direction: column;
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+
+    /* Additional styles for even smaller screens if needed */
+    #header {
+        font-size: 1.5em;
+    }
+}
 
 
 

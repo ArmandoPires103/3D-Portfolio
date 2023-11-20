@@ -55,7 +55,7 @@ function displayResults(data, value) {
                         <span style="text-decoration: underline;">Height</span>: ${item.height}<br>
                         <span style="text-decoration: underline;">Birth Year</span>: ${item.birth_year}<br>
                         <span style="text-decoration: underline;">Eye Color</span>: ${item.eye_color}<br>
-                        <span style="text-decoration: underline;">Birth Year</span>: ${item.birth_year}<br>
+                        <span style="text-decoration: underline;">Mass</span>: ${item.mass}<br>
                     </div>
                 </div>`;
         });

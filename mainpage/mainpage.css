@@ -32,6 +32,11 @@ footer {
     border: 1px solid black;
 }
 
+label input {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     body {

@@ -78,9 +78,9 @@ function displayResults(data, value) {
                     <div class="card p-3 m-3" style="opacity: 0.8;">
                         <h4 class="card-title text-center">${item.name}</h4>
                         <div class="card-content">
-                            <span style="text-decoration: underline;">Capacity</span>: ${item.model}<br>
-                            <span style="text-decoration: underline;">Model</span>: ${item.crew}<br>
-                            <span style="text-decoration: underline;">Vehicle Class</span>: ${item.pilots}<br> 
+                            <span style="text-decoration: underline;">Model</span>: ${item.model}<br>
+                            <span style="text-decoration: underline;">Crew</span>: ${item.crew}<br>
+                            <span style="text-decoration: underline;">Pilots</span>: ${item.pilots}<br> 
                         </div>
                     </div>`;
             });
@@ -92,9 +92,9 @@ function displayResults(data, value) {
                             <div class="card p-3 m-3" style="opacity: 0.8;">
                                 <h4 class="card-title text-center">${item.name}</h4>
                                 <div class="card-content">
-                                    <span style="text-decoration: underline;">Capacity</span>: ${item.rotation_period}<br>
-                                    <span style="text-decoration: underline;">Model</span>: ${item.orbital_period}<br>
-                                    <span style="text-decoration: underline;">Vehicle Class</span>: ${item.gravity}<br> 
+                                    <span style="text-decoration: underline;">Rotation-Period</span>: ${item.rotation_period}<br>
+                                    <span style="text-decoration: underline;">Orbital-Period</span>: ${item.orbital_period}<br>
+                                    <span style="text-decoration: underline;">Gravity</span>: ${item.gravity}<br> 
                                 </div>
                             </div>`;
             });

@@ -55,6 +55,7 @@ function displayResults(data, value) {
                         <span style="text-decoration: underline;">Height</span>: ${item.height}<br>
                         <span style="text-decoration: underline;">Birth Year</span>: ${item.birth_year}<br>
                         <span style="text-decoration: underline;">Eye Color</span>: ${item.eye_color}<br>
+                        <span style="text-decoration: underline;">Birth Year</span>: ${item.birth_year}<br>
                     </div>
                 </div>`;
         });
@@ -87,21 +88,21 @@ function displayResults(data, value) {
         }
 
              if (value === 'planets') {
-                    data.results.forEach(item => {
-                        output += `
-                            <div class="card p-3 m-3" style="opacity: 0.8;">
-                                <h4 class="card-title text-center">${item.name}</h4>
-                                <div class="card-content">
-                                    <span style="text-decoration: underline;">Rotation-Period</span>: ${item.rotation_period}<br>
-                                    <span style="text-decoration: underline;">Orbital-Period</span>: ${item.orbital_period}<br>
-                                    <span style="text-decoration: underline;">Gravity</span>: ${item.gravity}<br> 
-                                </div>
-                            </div>`;
+                data.results.forEach(item => {
+                    output += `
+                        <div class="card p-3 m-3" style="opacity: 0.8;">
+                            <h4 class="card-title text-center">${item.name}</h4>
+                            <div class="card-content">
+                                <span style="text-decoration: underline;">Rotation-Period</span>: ${item.rotation_period}<br>
+                                <span style="text-decoration: underline;">Orbital-Period</span>: ${item.orbital_period}<br>
+                                <span style="text-decoration: underline;">Gravity</span>: ${item.gravity}<br> 
+                            </div>
+                        </div>`;
             });
         }
     // Set the innerHTML of the element with the id "results" to the generated output
     results.innerHTML = output;
-}
+} 
 
 
 // Add an event listener to the element with the id "buttons"

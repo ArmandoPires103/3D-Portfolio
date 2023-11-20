@@ -72,6 +72,33 @@ function displayResults(data, value) {
                 </div>`;
         });
     }
+        if (value === 'starships') {
+            data.results.forEach(item => {
+                output += `
+                    <div class="card p-3 m-3" style="opacity: 0.8;">
+                        <h4 class="card-title text-center">${item.name}</h4>
+                        <div class="card-content">
+                            <span style="text-decoration: underline;">Capacity</span>: ${item.model}<br>
+                            <span style="text-decoration: underline;">Model</span>: ${item.crew}<br>
+                            <span style="text-decoration: underline;">Vehicle Class</span>: ${item.pilots}<br> 
+                        </div>
+                    </div>`;
+            });
+        }
+
+             if (value === 'planets') {
+                    data.results.forEach(item => {
+                        output += `
+                            <div class="card p-3 m-3" style="opacity: 0.8;">
+                                <h4 class="card-title text-center">${item.name}</h4>
+                                <div class="card-content">
+                                    <span style="text-decoration: underline;">Capacity</span>: ${item.rotation_period}<br>
+                                    <span style="text-decoration: underline;">Model</span>: ${item.orbital_period}<br>
+                                    <span style="text-decoration: underline;">Vehicle Class</span>: ${item.gravity}<br> 
+                                </div>
+                            </div>`;
+            });
+        }
     // Set the innerHTML of the element with the id "results" to the generated output
     results.innerHTML = output;
 }
